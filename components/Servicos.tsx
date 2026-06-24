@@ -21,7 +21,7 @@ export default function Servicos() {
         </div>
 
         {/* 2ª caixa */}
-        <div className="text-center py-20 bg-black/40 p-6 rounded-xl border border-white/20 hover:border-yellow-500 transition">
+        <div className="text-center hover:border-yellow-500 transition">
           <h3 className="text-3xl text-yellow-500 mb-4">
             Precisa de um orçamento sem compromisso?
           </h3>
