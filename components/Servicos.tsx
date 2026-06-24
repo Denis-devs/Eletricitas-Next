@@ -21,17 +21,32 @@ export default function Servicos() {
         </div>
 
         {/* 2ª caixa */}
-        <div className="text-center hover:border-yellow-500 transition">
-          <h3 className="text-3xl text-yellow-500 mb-4">
-            Precisa de um orçamento sem compromisso?
-          </h3>
-          <a
-            href="https://wa.me/5516994279365"
-            className="bg-green-500 text-white px-6 py-3 rounded-lg font-bold shadow-lg hover:bg-green-600 transition"
-          >
-            SOLICITAR VIA WHATSAPP
-          </a>
-        </div>
+<div className="text-center hover:border-yellow-500 transition">
+  <h3 className="text-3xl text-yellow-500 mb-4">
+    Precisa de um orçamento sem compromisso?
+  </h3>
+
+  {/* Botão visível no desktop (entre as informações) */}
+  <div className="hidden md:block">
+    <a
+      href="https://wa.me/5516994279365"
+      className="bg-green-500 text-white px-6 py-3 rounded-lg font-bold shadow-lg hover:bg-green-600 transition"
+    >
+      SOLICITAR VIA WHATSAPP
+    </a>
+  </div>
+
+  {/* Botão visível no celular (embaixo) */}
+  <div className="block md:hidden mt-6 text-center">
+    <a
+      href="https://wa.me/5516994279365"
+      className="bg-green-500 text-white px-6 py-3 rounded-lg font-bold shadow-lg hover:bg-green-600 transition"
+    >
+      SOLICITAR VIA WHATSAPP
+    </a>
+  </div>
+</div>
+
 
         {/* 3ª caixa */}
         <div className="flex flex-col items-center justify-center bg-black/40 p-6 rounded-xl border border-white/20 hover:border-yellow-500 transition text-center">
